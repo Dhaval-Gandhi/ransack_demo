@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>Marks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @students.each do |stud| %>
+      <tr>
+        <td><%= stud.name %></td>
+        <td><%= stud.city %></td>
+        <td><%= stud.marks %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
