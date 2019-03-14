@@ -1,10 +1,7 @@
 class StudentsController < ApplicationController
   def index
-    @q = Student.ransack(params[:q])
-    @students = @q.result
-  end
-
-  def new
-    @student = Student.new
+    @search = Student.ransack(params[:q])
+    @students = @search.result
+    @search.build_condition
   end
 end
