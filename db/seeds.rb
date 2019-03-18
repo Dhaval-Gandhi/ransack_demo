@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Seed running...."
+Student.create(name: 'Jhon', city: 'New York', age: '23')
+Student.create(name: 'Pat', city: 'Franklin', age: '20')
+Student.create(name: 'Arlen', city: 'Franklin', age: '27')
+Student.create(name: 'Barry', city: 'Georgetown', age: '34')
+Student.create(name: 'Crispin', city: 'Greenville', age: '18')
+puts "Seed fineshed"
